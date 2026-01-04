@@ -1,19 +1,51 @@
-cityParties/
-├── cityParties/           # Main project directory
-│   ├── __init__.py
-│   ├── settings/
-│   │   ├── __init__.py
-│   │   ├── base.py        # Base settings
-│   │   ├── development.py
-│   │   └── production.py
-│   ├── urls.py            # Main URL configuration
-│   └── wsgi.py
-├── apps/                  # All Django apps
-│   ├── __init__.py
-│   ├── accounts/         # User authentication and profiles
-│   ├── events/          # Core events functionality
-│   └── common/          # Shared utilities, mixins, helpers
-├── manage.py
-├── requirements.txt
-├── .env.example
-└── README.md
+Events_management_api/
+│
+├── manage.py                          # Django management script
+│
+├── events/                            # Main Django project folder
+│   ├── __init__.py                   # Makes this a Python package
+│   ├── settings.py                   # Project settings (database, apps, middleware)
+│   ├── urls.py                       # Main URL routing configuration
+│   ├── wsgi.py                       # WSGI entry point for deployment
+│   └── asgi.py                       # ASGI entry point (for async)
+│
+├── city_parties/                      # Your Django app (events app)
+│   ├── __init__.py                   # Makes this a Python package
+│   ├── admin.py                      # Admin interface configuration
+│   ├── apps.py                       # App configuration
+│   ├── models.py                     # Database models (Event model)
+│   ├── serializers.py                # DRF serializers (converts models to JSON)
+│   ├── views.py                      # API views/endpoints logic
+│   ├── urls.py                       # App-specific URL routing (if exists)
+│   ├── tests.py                      # Unit tests
+│   └── migrations/                   # Database migrations
+│       ├── __init__.py
+│       ├── 0001_initial.py
+│       └── ...
+│
+├── venv/                              # Virtual environment (not deployed)
+│   ├── bin/                          # Executables (python, pip, activate)
+│   ├── lib/                          # Installed packages
+│   └── ...
+│
+├── staticfiles/                       # Collected static files for production
+│   ├── admin/                        # Django admin static files
+│   ├── rest_framework/               # DRF static files
+│   └── ...
+│
+├── db.sqlite3                         # SQLite database file
+│
+├── requirements.txt                   # Python package dependencies
+│   # Contents:
+│   # django
+│   # djangorestframework
+│   # gunicorn
+│   # dj-database-url
+│   # psycopg2-binary
+│   # whitenoise
+│
+├── Procfile                           # Heroku deployment configuration
+│   # Contents: web: gunicorn events.wsgi
+│
+└── runtime.txt                        # Python version specification
+    # Contents: python-3.11.0
