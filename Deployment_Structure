@@ -1,0 +1,13 @@
+PythonAnywhere Configuration:
+│
+├── WSGI Configuration
+│   ├── Path: /home/katlegokng/Capstone_Project1/Events_management_api
+│   ├── Settings Module: events.settings
+│   └── WSGI application: events.wsgi
+│
+├── Virtual Environment
+│   └── Path: /home/katlegokng/Capstone_Project1/Events_management_api/venv
+│
+└── Static Files
+    ├── URL: /static/
+    └── Directory: /home/katlegokng/Capstone_Project1/Events_management_api/staticfiles
