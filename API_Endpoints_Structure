@@ -1,0 +1,36 @@
+https://katlegokng.pythonanywhere.com/
+│
+├── /api/
+│   ├── GET  → API Root (lists available endpoints)
+│   │
+│   ├── /events/
+│   │   ├── GET     → List all events
+│   │   ├── POST    → Create new event (requires auth)
+│   │   │
+│   │   ├── /upcoming/
+│   │   │   └── GET → List upcoming events only
+│   │   │
+│   │   ├── /by_location/?location=X
+│   │   │   └── GET → Filter events by location
+│   │   │
+│   │   └── /{id}/
+│   │       ├── GET    → Retrieve specific event
+│   │       ├── PUT    → Update event (requires auth)
+│   │       ├── PATCH  → Partial update (requires auth)
+│   │       └── DELETE → Delete event (requires auth)
+│   │
+│   └── /users/
+│       ├── GET  → List all users
+│       ├── POST → Create new user
+│       │
+│       └── /{id}/
+│           ├── GET    → Retrieve specific user
+│           ├── PUT    → Update user
+│           ├── PATCH  → Partial update
+│           └── DELETE → Delete user
+│
+├── /admin/
+│   └── Django admin interface
+│
+└── /api-auth/
+    └── DRF authentication (login/logout)
