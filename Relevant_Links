@@ -1,0 +1,7 @@
+https://katlegokng.pythonanywhere.com/api/events/ ----> Uploading new events 
+
+https://katlegokng.pythonanywhere.com/api/events/upcoming/ ---- viewing any upcoming events 
+
+https://katlegokng.pythonanywhere.com/api/ -----> API root user
+
+https://katlegokng.pythonanywhere.com/api/users/ ---> page to register yourself as someone who wants to add events and view events 
