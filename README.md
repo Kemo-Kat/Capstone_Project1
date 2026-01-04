@@ -42,9 +42,3 @@ ________________________________________
 •	Configure the application for production environments.
 •	Ensure the deployed API is accessible and functional.
 ________________________________________
-Learning Outcomes
-By completing this project, the developer aims to:
-•	Strengthen backend development skills using Django and DRF.
-•	Understand how to model real-world problems using relational databases.
-•	Apply best practices in API security, validation, and permissions.
-•	Build confidence in deploying and maintaining backend systems.
